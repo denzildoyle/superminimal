@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?51435498');
+  src: url('../font/fontello.eot?51435498#iefix') format('embedded-opentype'),
+  url('../font/fontello.woff?51435498') format('woff'),
+  url('../font/fontello.ttf?51435498') format('truetype'),
+  url('../font/fontello.svg?51435498#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?51435498#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-dribbble:before { content: '\e803'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e800'; } /* '' */
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  text-align: center;
+  background: url("../img/bg-img.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+  margin-bottom: 15px;
+  font-size: 60px;
+}
+p {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+a{
+  padding: 8px 15px;
+  font-size: 16px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: Helvetica;
+  -webkit-transition: all .3s ease-in-out;
+}
+a:hover{
+  background-color:rgba(0, 0, 0, .5);
+  border: 2px solid #FFF;
+}
+.center{
+  height:150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top:  -75px;
+}
+.icon-dribbble{
+  background-color: #EA4C88;
+  border: 2px solid #EA4C88;
+}
+.icon-dribbble:hover{
+  background-color: #EA4C88;
+  border: 2px solid #EA4C88;
+  color:rgba(0,0,0,.1);
+}
+.icon-facebook{
+  background-color: #3B5998;
+  border: 2px solid #3B5998;
+}
+.icon-facebook:hover{
+  background-color: #3B5998;
+  border: 2px solid #3B5998;
+  color:rgba(0,0,0,.1);
+}
+.icon-twitter{
+  background-color: #30D8F0;
+  border: 2px solid #30D8F0;
+}
+.icon-twitter:hover{
+  background-color: #30D8F0;
+  border: 2px solid #30D8F0;
+  color:rgba(0,0,0,.1);
+}
+footer {
+  position:fixed;
+  left:0;
+  bottom:0px;
+  height:60px;
+  width: 100%;
+}
+footer ul{
+  margin: 0 auto;
+}
+footer li{
+  display: inline;
+  padding-right:10px;
+}
+
+footer li:last-child{
+  padding-right:0;
+}
+
+footer a{
+  padding: 8px;
+  border-radius: 50%;
+}
+/* IE 6 */
+* html footer {
+ position:absolute;
+ top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
